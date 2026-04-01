@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Button click animation */
+button {
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/* Floating Hearts */
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 20px;
+  animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
